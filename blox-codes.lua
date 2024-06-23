@@ -20,5 +20,5 @@ return {
     "STARCODEHEO",
     "STAFFBATTLE",
     "ADMIN_STRENGTH",
-    "DRAGONABUSE",
+    "DRAGONABUSE"
 }
