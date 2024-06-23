@@ -1,3 +1,3 @@
 return {
-    "this script made by Teru
+    "this script made by Teru"
 }
