@@ -1,4 +1,4 @@
 return {
-    "[+] add auto farm with mode",
-    "[+] add stack auto farm"
+    "[+] Add auto farm with mode",
+    "[+] Add stack auto farm"
 }
