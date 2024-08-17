@@ -1,7 +1,6 @@
 local CombatFramework = require(game:GetService("Players").LocalPlayer.PlayerScripts:WaitForChild("CombatFramework"))
 local CombatFrameworkR = getupvalues(CombatFramework)[2]
 local Animation = Instance.new("Animation")
-
 function CurrentWeapon()
     local ac = CombatFrameworkR.activeController
     local ret = ac.blades[1]
@@ -16,8 +15,10 @@ function CurrentWeapon()
     end
     return ret
 end
-
 getgenv().click = function()
+    if game.Players.LocalPlayer.Character.Stun.Value ~= 0 then
+        return
+    end
     local ac = CombatFrameworkR.activeController
     if ac and ac.equipped then
         ac.hitboxMagnitude = 55
@@ -44,7 +45,7 @@ getgenv().click = function()
                     Animation.AnimationId = ac.anims.basic[2]
                     ac.humanoid:LoadAnimation(Animation):Play(1, 1)
                     game.ReplicatedStorage.Remotes.Validator:FireServer(math.floor(NumberAc12 / 1099511627776 * 16777215), AcAttack10)
-                    game:GetService("ReplicatedStorage").RigControllerEvent:FireServer("weaponChange", str(CurrentWeapon()))
+                    game:GetService("ReplicatedStorage").RigControllerEvent:FireServer("weaponChange", tostring(CurrentWeapon()))
                     game:GetService("ReplicatedStorage").RigControllerEvent:FireServer("hit", bladehit, 2, "")
                 end
             end
