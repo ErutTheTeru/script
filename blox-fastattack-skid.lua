@@ -19,8 +19,8 @@ end
 
 getgenv().click = function()
     local ac = CombatFrameworkR.activeController
-    ac.hitboxMagnitude = 55
     if ac and ac.equipped then
+        ac.hitboxMagnitude = 55
         for indexincrement = 1, 1 do
             local bladehit = require(game.ReplicatedStorage.CombatFramework.RigLib).getBladeHits(game.Players.LocalPlayer.Character,{game.Players.LocalPlayer.Character.HumanoidRootPart},60)
             if #bladehit > 0 then
