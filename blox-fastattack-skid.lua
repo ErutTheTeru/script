@@ -16,9 +16,6 @@ function CurrentWeapon()
     return ret
 end
 getgenv().click = function()
-    if game.Players.LocalPlayer.Character.Stun.Value ~= 0 then
-        return
-    end
     local ac = CombatFrameworkR.activeController
     if ac and ac.equipped then
         ac.hitboxMagnitude = 55
