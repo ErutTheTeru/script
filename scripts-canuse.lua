@@ -1,1 +1,1 @@
-return {bounty = true, main = false}
+return {bounty = {canuse = true, kick = ""}, main = {canuse = false, kick = "not able to use"}}
