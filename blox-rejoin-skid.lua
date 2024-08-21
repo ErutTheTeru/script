@@ -5,7 +5,7 @@ lp.Idled:Connect(function()
 end)
 
 func {
-        getgenv(),
+        bounty.functions.misc,
         "rejoin",
         function(v)
                 if v.Name == "ErrorPrompt" then
