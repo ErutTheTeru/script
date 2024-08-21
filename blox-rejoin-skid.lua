@@ -17,7 +17,7 @@ func {
 }
 
 fl {
-        game.CoreGui.RobloxPromptGui.promptOverlay:GetChildren(),
+        CoreGui.RobloxPromptGui.promptOverlay:GetChildren(),
         function(_, v)
                 rejoin(v)
         end 
