@@ -8,7 +8,7 @@ spawn(function()
                 bounty.functions.misc,
                 "rejoin",
                 function(v)
-                        if v.Name == "ErrorPrompt" and ffc(v, 'MessageArea') and ffc(v.MessageArea, "ErrorFrame") then
+                        if v.Name == "ErrorPrompt" and ffc(v, 'MessageArea') and ffc(v.MessageArea, "ErrorFrame") and not bounty.hop then
                                 if v.TitleFrame.ErrorTitle.Text ~= "Teleport Failed" then
                                         game:GetService("TeleportService"):Teleport(game.PlaceId, lp)
                                 end
