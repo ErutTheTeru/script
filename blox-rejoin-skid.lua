@@ -1,6 +1,7 @@
 spawn(function()
         lp.Idled:Connect(function()
                 game:GetService("VirtualUser"):Button2Down(Vector2.new(0,0), workspace.CurrentCamera.CFrame)
+                wt(1)
                 game:GetService("VirtualUser"):Button2Up(Vector2.new(0,0), workspace.CurrentCamera.CFrame)
         end)
         
