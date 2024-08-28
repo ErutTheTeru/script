@@ -47,7 +47,5 @@ getgenv().click = function()
                 end
             end
         end
-        game:GetService("VirtualUser"):CaptureController()
-        game:GetService("VirtualUser"):Button1Down(Vector2.new(0,1,0,1))
     end
 end
