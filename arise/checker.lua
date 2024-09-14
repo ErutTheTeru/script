@@ -1,0 +1,1 @@
+return {['$'] = {true, 'closed for updated'}, ['m'] = {false, 'not able to use'}}
