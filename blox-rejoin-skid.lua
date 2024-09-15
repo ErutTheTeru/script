@@ -5,7 +5,7 @@ spawn(function()
                 game:GetService('VirtualUser'):Button2Up(Vector2.new(0,0), workspace.CurrentCamera.CFrame)
         end)
         
-        func 
+        func {
                 'rejoin',
                 function(v)
                         if v.Name == 'ErrorPrompt' and ffc(v, 'MessageArea') and ffc(v.MessageArea, 'ErrorFrame') and not bounty.hop then
