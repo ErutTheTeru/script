@@ -17,11 +17,11 @@ spawn(function()
         }
         
         fl {
-                CoreGui.RobloxPromptGui.promptOverlay:GetChildren(),
+                coregui.RobloxPromptGui.promptOverlay:GetChildren(),
                 function(_, v)
                         rejoin(v)
                 end 
         }
         
-        CoreGui.RobloxPromptGui.promptOverlay.ChildAdded:Connect(rejoin)
+        coregui.RobloxPromptGui.promptOverlay.ChildAdded:Connect(rejoin)
 end)
